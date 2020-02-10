@@ -4,10 +4,12 @@ html {
     font-family: "Helvetica Neue", Helvetica, arial, sans-serif;
     color: #111;
     padding: 24px 24px 0px;
+    scroll-behavior: smooth;
 }
 
 body {
-    background: khaki;
+    max-width: 40%;
+    margin: auto;
 }
 
 ::-moz-selection {
@@ -124,6 +126,25 @@ a:active {
     color: blueviolet;
 }
 
+table {
+    width: 100%;
+    border-spacing: 0;
+}
+
+th {
+    text-align: left;
+}
+
+th,
+td {
+    padding: 4px 8px;
+    border-bottom: 1px solid gainsboro;
+}
+
+tr:nth-child(odd) {
+    background-color: whitesmoke;
+}
+
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
 
@@ -137,7 +158,7 @@ a:active {
     
     h1 {
         font-size: 58px;
-        line-height: 64;
+        line-height: 64px;
     }
 }
 
